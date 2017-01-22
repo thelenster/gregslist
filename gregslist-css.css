@@ -1,0 +1,172 @@
+/* CSS Document */
+
+/*What is box-sizing */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+	margin: 0px;
+}
+
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+.main_nav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.rl_logo {
+	display: inline-block;
+	border-radius: 100%;
+	font-weight: 800;
+}
+.rl_logo h1 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+/* My nav is not centered vertically within the element */
+nav ul {
+	list-style: none;
+	font-family: arial;
+	color: purple;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;	
+}
+
+
+main {
+	padding-left: 75px;
+}
+
+/* My search bar is not in the normal document flow, it's dissapeared behind the main nav*/
+.search_section {
+	margin-left:75px;
+	margin-bottom: 8px;
+}
+
+
+.search_section input {
+	font-family: "Roboto", sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 30px;
+	height: 30px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 0 5px 0 8px;
+	width: 400px;
+}
+
+.search_section button {
+	font-size: 17px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+/*Where does it reference from which to align*/
+.search-button {
+	vertical-align: bottom;
+}
+
+/*How does setting mag image to 100% make it smaller when the image itself is much larger in pixels.*/
+
+.magnifying-glass-icon {
+	height: 100%;
+}
+
+
+.pages {
+	display: inline-block;
+	font-size: 0;
+	margin-bottom: 30px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.pages-button {
+	font-size: 16px;
+	display: inline-block;
+	padding: 8px 15px;
+	border-radius: 3px;
+}
+
+/* Why are there two padding declerations */
+.pages-display {
+	font-size: 16px;
+	padding: 0 30px;
+	padding: 8px 15px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+/*Why is there a left margin on my buttons?  It's not justifying left by default - Referencing old code 
+
+.result_nav {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+.result_nav ul {
+	list-style: none;
+}
+
+.result_nav li {
+	display: inline-block;
+	border:lightgray solid 1px;
+	padding:5px 20px;
+	margin: 0;
+}
+
+*/
+.gray_border {
+	border: solid 1px lightgray;
+	padding: 5px;
+}
+.prev_button {
+	width: 75px;
+}
+
+.page_index {
+	width: 125px;
+	
+}
+
+.next_button {
+	width: 75px;
+}
+
+.results_page {
+	font-family: arial;
+	
+}
+.results_page p {
+	color: gray;
+}
+
+.blue_text {
+	color: blue;
+	font-weight: 500;
+}
